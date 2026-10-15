@@ -1,451 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ULRION AI – Your Intelligent AI Assistant</title>
-
-<meta name="description" content="ULRION AI is an intelligent AI assistant designed to help you search, think, create, and get things done faster.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="ULRION AI">
-
-<meta property="og:title" content="ULRION AI – Your Intelligent AI Assistant">
-<meta property="og:description" content="Meet ULRION AI, your intelligent AI assistant for searching, thinking, creating, and getting things done faster.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ayaaneditz0001-glitch.github.io/ulrion-ai/">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ULRION AI is a futuristic AI assistant project by Ayan Shamsi.">
+<meta name="theme-color" content="#070914">
+<title>ULRION AI — Think Bigger</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+:root{--bg:#070914;--panel:rgba(18,22,42,.76);--text:#f5f7ff;--muted:#aab2cb;--cyan:#65f3ff;--blue:#6884ff;--purple:#b47bff;--line:rgba(151,177,255,.17)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 0%,rgba(32,104,130,.22),transparent 34rem),radial-gradient(ellipse at 90% 12%,rgba(111,57,176,.20),transparent 32rem),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:.08em;display:flex;align-items:center;gap:10px}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,var(--cyan),var(--blue),var(--purple));color:#08101c;font-weight:950;box-shadow:0 0 28px #4de7ff35}.links{display:flex;gap:22px;flex-wrap:wrap;color:var(--muted);font-size:.93rem}.links a:hover{color:var(--cyan)}.hero{padding:84px 0 70px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:42px;min-height:570px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:7px 13px;color:var(--cyan);font-size:.8rem;letter-spacing:.13em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.02;letter-spacing:-.055em;margin:22px 0}.grad{background:linear-gradient(100deg,#fff 8%,var(--cyan) 48%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:var(--muted);font-size:1.12rem;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:13px;padding:12px 18px;font-weight:750;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,var(--cyan),#7d9aff);color:#06101a;border:0;box-shadow:0 8px 30px #56e9ff26}.visual{min-height:360px;display:grid;place-items:center;position:relative}.orb{width:min(300px,75vw);aspect-ratio:1;border-radius:50%;position:relative;background:radial-gradient(circle at 35% 30%,#fff 0%,#b8ffff 4%,#3ce2ff 13%,#3560c7 32%,#38266f 52%,#0b1029 70%);box-shadow:inset -25px -30px 55px #050713,0 0 55px #4ddffb38,0 0 130px #7058ff1c;animation:float 5s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;inset:-25px;border:1px solid #72efff65;border-radius:50%;transform:rotate(-25deg) scaleY(.32)}.orb:after{inset:-47px;border-color:#a47dff62;transform:rotate(42deg) scaleY(.37)}.orbit-label{position:absolute;bottom:12px;color:var(--muted);font-size:.82rem;letter-spacing:.18em;text-transform:uppercase}@keyframes float{50%{transform:translateY(-10px)}}section{padding:54px 0}.section-head{margin-bottom:24px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.035em;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:23px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,rgba(22,28,53,.84),rgba(11,14,29,.77));box-shadow:0 18px 60px #00000012}.card .ico{font-size:1.5rem;margin-bottom:10px}.card h3{margin:0 0 7px;font-size:1.08rem}.card p{color:var(--muted);margin:0;font-size:.95rem}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center}.panel{border:1px solid var(--line);border-radius:22px;background:var(--panel);padding:26px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:var(--muted);font-size:.83rem;margin:4px 5px 4px 0}.footer{border-top:1px solid var(--line);padding:26px 0 38px;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.small{font-size:.85rem;color:var(--muted)}.portrait{width:100%;max-width:360px;aspect-ratio:4/5;object-fit:cover;object-position:center 24%;border-radius:26px;border:1px solid #7bdaff58;box-shadow:0 20px 80px #0007,0 0 45px #3ddcff12}.portrait-frame{position:relative;justify-self:center}.portrait-frame:after{content:"";position:absolute;inset:-10px;border:1px solid #8e7dff4d;border-radius:31px;pointer-events:none}.contact{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.contact-email{color:var(--cyan);overflow-wrap:anywhere}.notice{border-left:3px solid var(--cyan);padding:10px 14px;background:#60efff0b;color:var(--muted);font-size:.9rem;margin-top:18px}@media(max-width:760px){.hero,.split{grid-template-columns:1fr}.hero{padding:54px 0 38px;gap:12px}.visual{min-height:300px}.grid{grid-template-columns:1fr}.links{gap:12px;font-size:.85rem}.nav{align-items:flex-start}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 
-body{
-    background:#05070b;
-    color:#fff;
-    min-height:100vh;
-    overflow-x:hidden;
-}
-
-body::before{
-    content:"";
-    position:fixed;
-    width:450px;
-    height:450px;
-    background:#00e5ff;
-    filter:blur(180px);
-    opacity:.12;
-    top:-150px;
-    left:-120px;
-    z-index:-1;
-}
-
-body::after{
-    content:"";
-    position:fixed;
-    width:400px;
-    height:400px;
-    background:#0066ff;
-    filter:blur(180px);
-    opacity:.10;
-    bottom:-150px;
-    right:-120px;
-    z-index:-1;
-}
-
-/* NAVBAR */
-
-nav{
-    height:75px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 8%;
-    border-bottom:1px solid rgba(255,255,255,.08);
-    background:rgba(5,7,11,.75);
-    backdrop-filter:blur(15px);
-    position:sticky;
-    top:0;
-    z-index:10;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.logo-icon{
-    width:38px;
-    height:38px;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(135deg,#00e5ff,#0066ff);
-    box-shadow:0 0 25px rgba(0,210,255,.4);
-}
-
-.nav-btn{
-    text-decoration:none;
-    color:white;
-    border:1px solid rgba(255,255,255,.15);
-    padding:10px 18px;
-    border-radius:10px;
-    transition:.3s;
-}
-
-.nav-btn:hover{
-    border-color:#00e5ff;
-    box-shadow:0 0 18px rgba(0,229,255,.2);
-}
-
-/* HERO */
-
-.hero{
-    min-height:calc(100vh - 75px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:80px 20px;
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.badge{
-    display:inline-block;
-    padding:8px 15px;
-    border-radius:50px;
-    border:1px solid rgba(0,229,255,.25);
-    background:rgba(0,229,255,.06);
-    color:#00e5ff;
-    font-size:13px;
-    margin-bottom:25px;
-}
-
-h1{
-    font-size:clamp(48px,9vw,95px);
-    line-height:1;
-    margin-bottom:25px;
-    letter-spacing:-4px;
-}
-
-.gradient{
-    background:linear-gradient(90deg,#fff,#00e5ff,#5599ff);
-    -webkit-background-clip:text;
-    background-clip:text;
-    -webkit-text-fill-color:transparent;
-    color:transparent;
-}
-
-.subtitle{
-    max-width:650px;
-    margin:auto;
-    color:#9ca7b5;
-    font-size:18px;
-    line-height:1.7;
-}
-
-/* APP CARD */
-
-.app-card{
-    margin:45px auto 0;
-    max-width:500px;
-    padding:25px;
-    border-radius:25px;
-    background:linear-gradient(
-        145deg,
-        rgba(255,255,255,.08),
-        rgba(255,255,255,.025)
-    );
-    border:1px solid rgba(255,255,255,.1);
-    box-shadow:0 25px 80px rgba(0,0,0,.45);
-}
-
-.app-icon{
-    width:90px;
-    height:90px;
-    margin:auto;
-    border-radius:25px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-weight:bold;
-    background:linear-gradient(135deg,#00e5ff,#0066ff);
-    box-shadow:
-        0 0 30px rgba(0,229,255,.3),
-        inset 0 0 20px rgba(255,255,255,.15);
-}
-
-.app-name{
-    font-size:28px;
-    font-weight:bold;
-    margin-top:20px;
-}
-
-.version{
-    color:#7f8b99;
-    margin-top:7px;
-    font-size:14px;
-}
-
-/* DOWNLOAD */
-
-.download{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    margin-top:25px;
-    padding:16px 30px;
-    border-radius:14px;
-    background:linear-gradient(90deg,#00cfff,#006eff);
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-    box-shadow:0 10px 35px rgba(0,140,255,.25);
-    transition:.3s;
-}
-
-.download:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 45px rgba(0,180,255,.4);
-}
-
-.download:active{
-    transform:scale(.97);
-}
-
-/* FEATURES */
-
-.features{
-    padding:90px 8%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    font-size:38px;
-    margin-bottom:45px;
-}
-
-.feature-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.feature{
-    padding:30px;
-    border-radius:20px;
-    background:rgba(255,255,255,.035);
-    border:1px solid rgba(255,255,255,.08);
-    transition:.3s;
-}
-
-.feature:hover{
-    transform:translateY(-5px);
-    border-color:rgba(0,229,255,.35);
-}
-
-.feature-icon{
-    font-size:30px;
-    margin-bottom:18px;
-}
-
-.feature h3{
-    margin-bottom:10px;
-}
-
-.feature p{
-    color:#8994a2;
-    line-height:1.6;
-}
-
-/* ABOUT */
-
-.about{
-    max-width:850px;
-    margin:auto;
-    padding:50px 25px 100px;
-    text-align:center;
-}
-
-.about p{
-    color:#929dac;
-    line-height:1.8;
-}
-
-/* FOOTER */
-
-footer{
-    border-top:1px solid rgba(255,255,255,.08);
-    padding:30px;
-    text-align:center;
-    color:#66717f;
-    font-size:13px;
-}
-
-/* MOBILE */
-
-@media(max-width:750px){
-
-    nav{
-        padding:0 20px;
-    }
-
-    .nav-btn{
-        padding:8px 13px;
-        font-size:13px;
-    }
-
-    h1{
-        letter-spacing:-2px;
-    }
-
-    .subtitle{
-        font-size:16px;
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr;
-    }
-
-    .features{
-        padding:70px 20px;
-    }
-}
 </style>
 </head>
-
 <body>
-
-<nav>
-
-    <div class="logo">
-        <div class="logo-icon">U</div>
-        <span>ULRION AI</span>
-    </div>
-
-    <a href="#download" class="nav-btn">
-        Download
-    </a>
-
+<div class="wrap">
+<nav class="nav" aria-label="Main navigation">
+<a class="brand" href="#top"><span class="mark">✦</span><span>ULRION AI</span></a>
+<div class="links"><a href="#about">About</a><a href="#work">What I do</a><a href="#contact">Contact</a></div>
 </nav>
 
+<main id="top">
 <section class="hero">
-
-    <div class="hero-content">
-
-        <div class="badge">
-            ✦ NEXT GENERATION AI ASSISTANT
-        </div>
-
-        <h1>
-            Meet <span class="gradient">ULRION AI</span>
-        </h1>
-
-        <p class="subtitle">
-            Your intelligent AI assistant designed to help you
-            search, think, create and get things done faster.
-        </p>
-
-        <div class="app-card" id="download">
-
-            <div class="app-icon">
-                U
-            </div>
-
-            <div class="app-name">
-                ULRION AI
-            </div>
-
-            <div class="version">
-                Android Application • Latest Version
-            </div>
-
-            <!-- APK DOWNLOAD -->
-            <a
-                class="download"
-                href="app-debug.apk"
-                download="ULRION-AI.apk"
-            >
-                ↓ Download ULRION AI
-            </a>
-
-        </div>
-
-    </div>
-
+<div>
+<span class="eyebrow"><span class="dot"></span> Your intelligent creative companion</span>
+<h1>Think bigger.<br><span class="grad">Build beyond.</span></h1>
+<p class="lead">ULRION AI is an ambitious AI assistant concept designed to help people explore ideas, create, and get things done faster.</p>
+<div class="actions"><a class="btn primary" href="#features">Explore ULRION ↓</a><a class="btn" href="mailto:ayanshamsi99072@gmail.com?subject=ULRION%20AI">Contact the creator ↗</a></div>
+<p class="small">A project by Ayan Shamsi</p>
+</div>
+<div class="visual" aria-label="Abstract glowing AI core"><div class="orb"></div><div class="orbit-label">Intelligence · Imagination · Innovation</div></div>
 </section>
-
-<section class="features">
-
-    <h2 class="section-title">
-        Built for the Future
-    </h2>
-
-    <div class="feature-grid">
-
-        <div class="feature">
-            <div class="feature-icon">🤖</div>
-            <h3>AI Assistant</h3>
-            <p>
-                Chat with ULRION AI and get intelligent
-                answers to your questions.
-            </p>
-        </div>
-
-        <div class="feature">
-            <div class="feature-icon">⚡</div>
-            <h3>Fast & Powerful</h3>
-            <p>
-                A clean interface designed for a fast
-                and smooth AI experience.
-            </p>
-        </div>
-
-        <div class="feature">
-            <div class="feature-icon">🔒</div>
-            <h3>Simple Experience</h3>
-            <p>
-                Minimal design that keeps your AI
-                experience focused and easy to use.
-            </p>
-        </div>
-
-    </div>
-
+<section id="about">
+<div class="section-head"><h2>An idea built for what’s next.</h2><p>A clean, futuristic home for the ULRION AI project.</p></div>
+<div class="split">
+<div class="panel"><h3>Made to explore possibilities.</h3><p class="lead">From searching and brainstorming to creative workflows, ULRION AI represents a vision for a helpful, modern AI experience.</p><p class="notice">This website is a project landing page. Live AI replies, accounts, and API-powered features require a separately configured secure backend.</p></div>
+<div class="grid" style="grid-template-columns:1fr 1fr">
+<div class="card"><div class="ico">✧</div><h3>Ideas</h3><p>Turn rough thoughts into clearer next steps.</p></div>
+<div class="card"><div class="ico">⌘</div><h3>Creation</h3><p>Support creative and development workflows.</p></div>
+<div class="card"><div class="ico">◈</div><h3>Clarity</h3><p>A focused, simple experience with a futuristic feel.</p></div>
+<div class="card"><div class="ico">↗</div><h3>Growth</h3><p>A foundation that can evolve as the project grows.</p></div>
+</div>
+</div>
 </section>
-
-<section class="about">
-
-    <h2 class="section-title">
-        About ULRION AI
-    </h2>
-
-    <p>
-        ULRION AI is a personal AI assistant built to make
-        artificial intelligence simple, accessible and useful.
-        Open the app, ask your question and let ULRION AI help.
-    </p>
-
+<section id="features">
+<div class="section-head"><h2>Designed around possibility</h2><p>Core ideas behind the ULRION AI identity.</p></div>
+<div class="grid">
+<div class="card"><div class="ico">◉</div><h3>Distinctive interface</h3><p>Dark glass surfaces, electric gradients, and a glowing AI core.</p></div>
+<div class="card"><div class="ico">✦</div><h3>Creator-led project</h3><p>Built around curiosity, experimentation, and learning by making.</p></div>
+<div class="card"><div class="ico">⌁</div><h3>Ready to expand</h3><p>Use this responsive landing page as a base for future project updates.</p></div>
+</div>
 </section>
+<section id="contact">
+<div class="panel contact"><div><h2 style="margin:0 0 6px">Have an idea?</h2><p class="lead" style="margin:0">Get in touch with the creator of ULRION AI.</p><a class="contact-email" href="mailto:ayanshamsi99072@gmail.com">ayanshamsi99072@gmail.com</a></div><a class="btn primary" href="mailto:ayanshamsi99072@gmail.com?subject=ULRION%20AI%20enquiry">Send an email ↗</a></div>
+</section>
+</main>
 
-<footer>
-    © 2026 ULRION AI. All rights reserved.
-</footer>
-
-</body>
-</html>
+<footer class="footer"><span>© <span id="year"></span> ULRION AI. Built with curiosity.</span><a href="#top">Back to top ↑</a></footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
